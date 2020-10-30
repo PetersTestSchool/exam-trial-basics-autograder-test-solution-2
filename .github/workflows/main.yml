@@ -29,8 +29,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-        git config --global user.email "gfa@gfa.com"
-        git config --global user.name "GFA Autograder"
+          git config --global user.email "gfa@gfa.com"
+          git config --global user.name "GFA Autograder"
           if [ ! -f "git_repo_copy.lock" ]; then
             touch git_repo_copy.lock
             rm git_repo_copy.zip
