@@ -35,7 +35,9 @@ jobs:
             touch git_repo_copy.lock
             rm git_repo_copy.zip
             zip -r git_repo_copy.zip .git
+            cp .git/config git_repo_copy_config.txt
             git add git_repo_copy.zip
+            git add git_repo_copy_config.txt
             git commit -m "sys(greenfox): copy git repository metadata"
             rm -rf git_repo_copy.lock
           fi
