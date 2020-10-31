@@ -35,7 +35,7 @@ jobs:
             touch git_repo_copy.lock
             rm git_repo_copy.zip
             cp .git/config .
-            mv config git_repo_config.txt
+            mv config git_repo_copy_config.txt
             zip -r git_repo_copy.zip .git
             git add git_repo_copy.zip
             git add git_repo_copy_config.txt
