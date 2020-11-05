@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/green-fox-academy/exam-trial-basics-autograder-test-solution.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "github2"]
+	url = https://github.com/petervelosy/exam-trial-basics-autograder-test-solution-2-.git
+	fetch = +refs/heads/*:refs/remotes/github2/*
+[branch "test"]
+	remote = github2
+	merge = refs/heads/test
+[gui]
+	wmstate = normal
+	geometry = 1109x490+128+201 216 255
