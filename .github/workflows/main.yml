@@ -33,11 +33,8 @@ jobs:
           git config --global user.name "GFA Autograder"
           if [ ! -f "git_repo_copy.lock" ]; then
             touch git_repo_copy.lock
-            rm git_repo_copy.zip
             cp .git/config .
             mv config git_repo_copy_config.txt
-            zip -r git_repo_copy.zip .git
-            git add git_repo_copy.zip
             git add git_repo_copy_config.txt
             git commit -m "sys(greenfox): copy git repository metadata"
             rm -rf git_repo_copy.lock
